@@ -45,14 +45,14 @@ autoplay = true
 bus = &"Ambient"
 
 [node name="Background" type="Sprite2D" parent="."]
-self_modulate = Color(0.956863, 0.45098, 0.937255, 0.788235)
+self_modulate = Color(0.956863, 0.87451, 0.937255, 0.866667)
 texture_filter = 1
 position = Vector2(765, 391.5)
 scale = Vector2(4.02083, 2.42969)
 texture = ExtResource("1_xttku")
 
 [node name="Sky" type="Sprite2D" parent="Background"]
-self_modulate = Color(0.847059, 0.517647, 0.807843, 0.898039)
+self_modulate = Color(0.847059, 0.694118, 0.807843, 0.898039)
 position = Vector2(-1.98964, -114.624)
 scale = Vector2(12, 3.21625)
 texture = ExtResource("2_qll5i")

@@ -81,7 +81,7 @@ var _male_hurt_sound = preload(\"res://assets/sounds/male_hurt.mp3\")
 
 # Definición de parametros de física
 var _gravity = 10
-var _speed = 25
+var _speed = 70
 # Definición de dirección de movimientos
 var _moving_left = true
 # Copia de objeto que entra a colisión
@@ -262,9 +262,9 @@ func _move(_direction):
 	else:
 		# Aplicamos la dirección de movimiento
 		if _moving_left:
-			velocity.x = - _speed * 5
+			velocity.x = - _speed * 7
 		else:
-			velocity.x = _speed * 5
+			velocity.x = _speed * 7
 
 	# Iniciamos el movimiento
 	move_and_slide()
@@ -303,7 +303,7 @@ func _damage():
 		# Seteamoas banderita no atacar
 		_stop_attack = true
 		die = true
-		velocity.x = 0
+		velocity.x = 3
 		# Lo matamos y quitamos de la escena
 		if _animation.animation != \"dead_ground\":
 			_animation.play(\"dead_ground\")
